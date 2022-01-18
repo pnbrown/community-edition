@@ -133,6 +133,11 @@ func main() {
 		URL:     "/package-management",
 		Package: MyPackage{},
 	})
+	newPackageVersions = append(newPackageVersions, SubFolderItem{
+		Page:    "Create a Package",
+		URL:     "/package-creation-step-by-step",
+		Package: MyPackage{},
+	})
 	for key, value := range currentPackageVersions {
 		newPackageVersions = append(newPackageVersions, SubFolderItem{
 			Package: MyPackage{
